@@ -1,0 +1,38 @@
+.vertical-loop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 3%;
+    height: auto; 
+    overflow: hidden;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+}
+
+.vertical-loop h1 {
+    text-transform: capitalize;
+    color: orange;
+    margin-bottom: 2%;
+}
+
+.message {
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    color: #30f16a;
+    opacity: 0.5;
+
+}
+.message.visible {
+  opacity: 1;
+  color: #fff;
+}
+
+

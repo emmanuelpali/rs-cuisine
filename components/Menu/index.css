@@ -1,0 +1,12 @@
+.menu {
+    margin: 0 auto;
+    width: 80vw;
+    height: auto;
+    text-align: center;
+}
+
+.menu h2 {
+    padding-top: 5%;
+    color: orange;
+    font-size: 2rem;
+}
