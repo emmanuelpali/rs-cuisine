@@ -32,10 +32,12 @@ const VerticalLoop: React.FC<VerticalLoopProps> = ({ messages }) => {
     );
   });
 
-  return (<div className="vertical-loop">
-    <h1>RS Cuisine</h1>
-    {displayMessages}
-    </div>);
+  return (
+      <div className="vertical-loop">
+          <h1>RS Cuisine</h1>
+          {displayMessages}
+      </div>
+    );
 };
 
 export default VerticalLoop;

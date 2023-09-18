@@ -1,24 +1,31 @@
 .navbar {
     background-color: orange;
+    top: -75px;
     display: flex ;
     padding: 0 10%;
     justify-content: space-between;
     position: fixed;
     width: 100vw;
     color:  #fff;
-    opacity: 0.85;
+    opacity: 0;
     z-index: 12;
     height: 100px;
+    animation: comeup 2s ease 2s  forwards;
+}
+
+@keyframes comeup {
+  from {top: -75px; opacity: 0;}
+  to {top: 0; opacity: 0.85;}
 }
 
 .navbar .logo img{
     background-color: orange;
-    color: orange;
 } 
 .navbar-container {
     display: block;
     position: relative;
-    width: 50vw;
+    width: 100vw;
+
 }
   .navbar-container input[type="checkbox"] {
     position: absolute;
@@ -71,14 +78,12 @@
   .navbar .menu-items {
     padding-top: 100px;
     background: orange;
-    height: auto;
-    width: 100%;
+    height: 100vh;
     opacity: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: -40px;
-    padding-left: 50px;
+    justify-content: center;
     transition: opacity 0.5s ease-in-out;
     box-shadow: 5px #aaa;
   }
@@ -88,6 +93,9 @@
     font-size: 1.3rem;
     font-weight: 500;
     list-style: none;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
   }
 
   .navbar-container input[type="checkbox"]:checked ~ .menu-items {

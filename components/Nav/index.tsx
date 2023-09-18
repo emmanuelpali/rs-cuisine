@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import Image from 'next/image';
 
-import logo from '@/app/images/RS.png'
+import logo from '../../public/images/RS.png'
 
 function Nav() {
   return (
