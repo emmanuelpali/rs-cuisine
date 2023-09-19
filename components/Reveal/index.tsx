@@ -1,11 +1,14 @@
 'use client'
-import React, {  useRef } from 'react';
+import React, {  useRef, ReactNode  } from 'react';
 import styles from './index.module.css';
-
 
 import { motion, useInView } from "framer-motion"
 
-const Reveal = ({ children}) => {
+interface RevealProps {
+    children: ReactNode; // Specify the type for the children prop
+  }
+
+const Reveal: React.FC<RevealProps> = ({ children}) => {
     const ref = useRef(null);
     const isInView = useInView(ref, {once: true})
   return (
