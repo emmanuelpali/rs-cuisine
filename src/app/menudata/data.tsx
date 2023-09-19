@@ -1,6 +1,25 @@
 import masaPic from '../../../public/images/IMG_20230628_185502-land.png'
 
-const menulist = [
+import { StaticImageData } from 'next/image';
+
+interface MenuSub {
+  quantity: string;
+  price: string;
+}
+
+interface MenuItem {
+  [key: string]: MenuSub;
+}
+
+interface MenuData {
+  id: number;
+  categoryName: string;
+  thumbnail: StaticImageData;
+  description: string;
+  categoryItems: MenuItem;
+}
+
+const menulist: MenuData[] = [
     {
         id: 1,
         thumbnail: masaPic,

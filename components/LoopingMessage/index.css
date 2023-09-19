@@ -25,15 +25,15 @@
 }
 
 .vertical-loop h1 {
-    text-transform: capitalize;
-    color: rgb(154, 232, 11);
+    text-transform: uppercase;
+    color: orange;
     margin-bottom: 2%;
     font-size: 3rem;
+    text-decoration: underline;
 }
 
 .message {
     margin-bottom: 30px;
-    text-transform: capitalize;
     color: #30f16a;
     opacity: 0.5;
 
@@ -41,6 +41,7 @@
 .message.visible {
   opacity: 1;
   color: #fff;
+  font-size: 1.2rem;
 }
 
 

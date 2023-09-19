@@ -5,7 +5,7 @@ import VerticalLoop from '../LoopingMessage'
 const Hero: React.FC = () => {
     const messages = ["\"Crafted with precision, infused with passion.\"", "\"Ingredients chosen with care, meals made with pride.\"", "\"Meticulous preparation, a taste of our dedication.\""];
   return (
-    <div className='hero'>
+    <div className='hero' id='home'>
         <VerticalLoop messages={messages} />
        
         <div className="hero-video">
