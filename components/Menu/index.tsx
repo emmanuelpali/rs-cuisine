@@ -7,7 +7,6 @@ const Menu = () => {
 
   return (
     <div className={styles.menu} id='menu'>
-        <h2>Our Menu</h2>
         <MenuCategory />
     </div>
   )

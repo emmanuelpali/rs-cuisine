@@ -24,6 +24,7 @@ interface MenuData {
 const MenuCategory: React.FC = () => {
   return (
     <>
+            <h2>Our Menu</h2>
       {menudata.map((menu: MenuData) => (
         <Reveal key={menu.id}>
           <div className={styles.menuCategory}>

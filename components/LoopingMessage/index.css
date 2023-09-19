@@ -16,7 +16,7 @@
     background: transparent;
     backdrop-filter: blur(5px);
     border: 1px solid white;
-    animation: appear 1s ease-in 0.5s forwards;
+    animation: appear 1s ease-in 1.2s forwards;
 }
 
 @keyframes appear {
